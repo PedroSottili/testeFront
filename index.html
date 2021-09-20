@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Teste</title>
+</head>
+<body>
+    <img src="./images/loading (1).gif" alt="">
+    <h1 id="bemvindo">Bem vindo ao site!</h1>
+    <button type="button" onclick=AbrirModal() class="btn btn-primary">Clique aqui para se cadastrar...</button>
+    <div class="modal" style="display: none;">
+        <b><h4 id="h4modal">Digite seus dados no formulário abaixo:</h4></b>
+        <div class="input-group mb-3">
+            <input id="nome" type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="cpf" type="text" class="form-control" placeholder="CPF" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="email" type="text" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="senha" type="password" class="form-control" placeholder="Senha" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="confirmasenha" type="password" class="form-control" placeholder="Confirme a senha" aria-label="Username" aria-describedby="basic-addon1">
+            <button id="cadastrar" onclick=cadastrar(event) type="button" class="btn btn-success">Cadastrar</button>
+            <button id="fecharmodal" onclick=FecharModal() type="button" class="btn btn-danger">X</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

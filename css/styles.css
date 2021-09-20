@@ -1,0 +1,106 @@
+#bemvindo {
+  text-align: center;
+  position: relative;
+  top: -150px;
+  font-size: 50px;
+}
+
+button {
+  position: absolute;
+  left: 41%;
+  top: 275px;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  top: 300px;
+  left: 430px;
+  position: relative;
+  opacity: 35%;
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(173, 243, 93);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  animation: animate;
+  animation-duration: 800ms;
+  border-radius: 5%;
+}
+
+@keyframes animate {
+  from {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+#h4modal {
+  text-align: center;
+  top: 5%;
+  position: relative;
+  color: #ffffff;
+}
+
+#nome {
+  top: 50px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+}
+
+#cpf {
+  top: 120px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+}
+
+#email {
+  top: 190px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+}
+
+#senha {
+  top: 260px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+}
+
+#confirmasenha {
+  top: 330px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+}
+
+#cadastrar {
+  top: 400px;
+  position: absolute;
+  left: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+#fecharmodal {
+  top: 400px;
+  position: absolute;
+  left: 137px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
